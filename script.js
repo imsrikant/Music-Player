@@ -123,20 +123,14 @@ function updateProgressBar(e) {
 }
 // Set Progress Bar
 function setProgressBar(e) {
-    console.log("🚀 ~ file: script.js ~ line 126 ~ setProgressBar ~ e", e);
+    
     const width = this.clientWidth;
-    console.log(
-        "🚀 ~ file: script.js ~ line 128 ~ setProgressBar ~ width",
-        width
-    );
+    
     const clickX = e.offsetX;
-    console.log(
-        "🚀 ~ file: script.js ~ line 130 ~ setProgressBar ~ clickX",
-        clickX
-    );
+    
     const { duration } = music;
-    console.log(clickX / width);
-    console.log((clickX / width) * duration);
+    
+    
     music.currentTime = (clickX / width) * duration;
 }
 // Event Listeners
